@@ -14,7 +14,7 @@ public class EmployeeService {
     @Autowired
     private EmployeeRepository employeeRepository;
 
-    @Cacheable(value = "employeeCache")
+    // @Cacheable(value = "employeeCache")
     public List<Employee> getAllEmployees() {
         return employeeRepository.employees();
     }
